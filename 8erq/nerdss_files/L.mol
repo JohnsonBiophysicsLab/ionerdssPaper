@@ -1,0 +1,20 @@
+Name = L
+
+checkOverlap = true
+countTransition = true
+transitionMatrixSize = 100
+# translational diffusion constants
+D = [185.307, 185.307, 185.307]
+
+# rotational diffusion constants
+Dr = [79.2646, 79.2646, 79.2646]
+
+# Coordinates
+COM   0.0000000   0.0000000   0.0000000
+la1  1.4623787   0.4495060   -1.0532890
+lh1  0.5377113   -0.3905476   0.7432426
+
+# bonds
+bonds = 2
+com la1
+com lh1

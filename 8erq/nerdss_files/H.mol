@@ -1,0 +1,18 @@
+Name = H
+
+checkOverlap = true
+countTransition = true
+transitionMatrixSize = 100
+# translational diffusion constants
+D = [183.327, 183.327, 183.327]
+
+# rotational diffusion constants
+Dr = [76.7517, 76.7517, 76.7517]
+
+# Coordinates
+COM   0.0000000   0.0000000   0.0000000
+hl1  -0.9673740   0.4481224   0.4583328
+
+# bonds
+bonds = 1
+com hl1

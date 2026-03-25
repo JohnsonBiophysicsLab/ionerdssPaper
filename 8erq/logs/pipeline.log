@@ -1,0 +1,181 @@
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - === PDB Pipeline Started for 8ERQ ===
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Workspace: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Timestamp: 2026-03-11T11:56:04.388795
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Initialized workspace for 8ERQ at /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Hyperparameters: PDBModelHyperparameters(homotypic_detection='auto', residue_similarity_threshold=0.7, distance_cutoff=0.55, residue_cutoff=2, matching_mode='default', steric_clash_mode='off')
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - NOTICE - Step 1: Processing structure source: 8erq
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Downloading biological assembly 1 for 8ERQ from https://files.rcsb.org/download/8erq-assembly1.cif.gz
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Downloaded and decompressed assembly 1 to /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/structures/downloaded/8erq-assembly1.cif
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Using structure file: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/structures/downloaded/8erq-assembly1.cif
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - File size: 424651 bytes
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Parsing structure file: 8erq-assembly1.cif
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Structure parsed successfully - concatenated 1 frames into single frame
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Extracting chain data...
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Processed 3 valid chains: ['A', 'H', 'L']
+2026-03-11 11:56:04 - ionerdss.pdb.8ERQ - INFO - Step 2: Detecting interfaces...
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Found 2 interfaces between 3 chains
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Step 3: Grouping repeated chains...
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created 3 chain groups using default method
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Step 4: Building molecular templates...
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created molecule template 'A' from reference chain 'A' with 1 members
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created molecule template 'H' from reference chain 'H' with 1 members
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created molecule template 'L' from reference chain 'L' with 1 members
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Processing 2 interfaces for template creation
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created heterotypic interface types: AL1, LA1 (d_i=23.75, d_j=18.57, theta_i=0.458, theta_j=0.636, method=auto, reason=different_molecule_types)
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO -   Residue composition - Chain A: {'SER': 1, 'THR': 1}, Chain L: {'GLY': 1, 'ASN': 1, 'SER': 1}
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created heterotypic interface types ['AL1', 'LA1'] using auto detection (reason: different templates)
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created heterotypic interface types: HL1, LH1 (d_i=11.60, d_j=9.97, theta_i=0.659, theta_j=0.611, method=auto, reason=different_molecule_types)
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO -   Residue composition - Chain H: {'ALA': 1, 'GLN': 1}, Chain L: {'ALA': 1, 'GLY': 1}
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created heterotypic interface types ['HL1', 'LH1'] using auto detection (reason: different templates)
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Interface types by template pair:
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO -   A <-> L: 2 types: ['AL1', 'LA1']
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO -   H <-> L: 2 types: ['HL1', 'LH1']
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Interface signatures:
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO -   AL1: d_i=23.75, d_j=18.57, theta_i=0.458, theta_j=0.636
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO -   LA1: d_i=23.75, d_j=18.57, theta_i=0.458, theta_j=0.636
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO -   HL1: d_i=11.60, d_j=9.97, theta_i=0.659, theta_j=0.611
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO -   LH1: d_i=11.60, d_j=9.97, theta_i=0.659, theta_j=0.611
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Regularized group A: 1 high-priority, 0 low-priority members. Averaging used HIGH set (λ=0.00, cap=6.0 Å).
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Regularized group H: 1 high-priority, 0 low-priority members. Averaging used HIGH set (λ=0.00, cap=6.0 Å).
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Regularized group L: 1 high-priority, 0 low-priority members. Averaging used HIGH set (λ=0.00, cap=6.0 Å).
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Regularized group A: 1 high-priority, 0 low-priority members. Averaging used HIGH set (λ=0.00, cap=6.0 Å).
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Regularized group H: 1 high-priority, 0 low-priority members. Averaging used HIGH set (λ=0.00, cap=6.0 Å).
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Regularized group L: 1 high-priority, 0 low-priority members. Averaging used HIGH set (λ=0.00, cap=6.0 Å).
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Interface AL1 of type AL1
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Interface LA1 of type LA1
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Interface HL1 of type HL1
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Interface LH1 of type LH1
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created 3 molecule templates and 4 interface templates
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Step 5: Assembling final system...
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Building complete system...
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Processing 2 interfaces for instance creation
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Beginning interface instance creation with de-duplication
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Interface 0 has assigned type: AL1
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created bidirectional interface instances: A_A_L_L_1 (AL1) <-> L_L_A_A_1 (LA1)
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Interface 1 has assigned type: HL1
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created bidirectional interface instances: H_H_L_L_1 (HL1) <-> L_L_H_H_1 (LH1)
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Created 4 interface instances
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - System created with 3 molecule types, 4 interface types, 3 molecule instances, 4 interface instances
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - System building completed
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Calculated default molecule counts (Total=225): {'A': 75, 'H': 75, 'L': 75}
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Step 6: Generating visualizations...
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Generating visualizations...
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Initialized PDB visualizer
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Generating all visualizations...
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Plotting basic coarse-grained structure...
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Saved basic coarse-grained structure plot to: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/basic_coarse_grained_structure.png
+2026-03-11 11:57:10 - ionerdss.pdb.8ERQ - INFO - Plotting interface connections...
+2026-03-11 11:57:11 - ionerdss.pdb.8ERQ - INFO - Saved interface connections plot to: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/interface_connections.png
+2026-03-11 11:57:11 - ionerdss.pdb.8ERQ - INFO - Plotting chain groups...
+2026-03-11 11:57:11 - ionerdss.pdb.8ERQ - INFO - Saved chain groups plot to: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/chain_groups.png
+2026-03-11 11:57:11 - ionerdss.pdb.8ERQ - INFO - Plotting template overview...
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Saved template overview plot to: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/template_overview.png
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generating PyMOL visualization script...
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated PyMOL script: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/8ERQ_visualization.pml
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Run 'pymol /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/8ERQ_visualization.pml' to visualize the structure
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Saving coarse-grained structure to CIF...
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Saved coarse-grained structure to: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/8ERQ_coarse_grained.cif
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated 6 visualization outputs
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated basic_cg: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/basic_coarse_grained_structure.png
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated interfaces: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/interface_connections.png
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated groups: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/chain_groups.png
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated templates: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/template_overview.png
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated pymol: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/8ERQ_visualization.pml
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated cg_structure: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/8ERQ_coarse_grained.cif
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated basic_cg: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/basic_coarse_grained_structure.png
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated interfaces: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/interface_connections.png
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated groups: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/chain_groups.png
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated templates: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/template_overview.png
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated pymol: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/8ERQ_visualization.pml
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated cg_structure: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/visualizations/8ERQ_coarse_grained.cif
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Step 7: Exporting NERDSS simulation files...
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Created NERDSS export directory: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - ======================
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - A_A
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - [26.90180664 24.21772461 29.56473999]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - <class 'dict'>
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - A_A_L_L_1:L_L, [26.65205  25.248951 31.6893  ]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - ======================
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - H_H
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - [26.62062378 24.04397736 33.24641724]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - <class 'dict'>
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - H_H_L_L_1:L_L, [25.65325 24.4921  33.70475]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - ======================
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - L_L
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - [24.86598663 25.26409607 32.74535522]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - <class 'dict'>
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - L_L_A_A_1:A_A, [26.328365 25.713602 31.692066]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - L_L_H_H_1:H_H, [25.403698 24.873549 33.488598]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Exporting NERDSS simulation files...
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Using representative instance (id=5908446560) with 1 interfaces for molecule type A
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated site label: AL1 -> al1 (mol1=A, mol2=L, index=1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Wrote .mol file with 1 interfaces using representative coordinates: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/A.mol
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Using representative instance (id=5908446416) with 1 interfaces for molecule type H
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated site label: HL1 -> hl1 (mol1=H, mol2=L, index=1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Wrote .mol file with 1 interfaces using representative coordinates: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/H.mol
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Using representative instance (id=5908431584) with 2 interfaces for molecule type L
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated site label: LA1 -> la1 (mol1=L, mol2=A, index=1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated site label: LH1 -> lh1 (mol1=L, mol2=H, index=1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Wrote .mol file with 2 interfaces using representative coordinates: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/L.mol
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Singleton interface A.AL1 using default normal [0. 0. 1.] (dot=0.895)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Calculated normal vector for instance 5908446560 of A singleton interface AL1 (sites ['al1']): [0. 0. 1.]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Singleton interface H.HL1 using default normal [0. 0. 1.] (dot=0.395)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Calculated normal vector for instance 5908446416 of H singleton interface HL1 (sites ['hl1']): [0. 0. 1.]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Singleton interface L.LA1 using default normal [0. 0. 1.] (dot=0.567)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Calculated normal vector for instance 5908431584 of L singleton interface LA1 (sites ['la1']): [0. 0. 1.]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Singleton interface L.LH1 using default normal [0. 0. 1.] (dot=0.745)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Calculated normal vector for instance 5908431584 of L singleton interface LH1 (sites ['lh1']): [0. 0. 1.]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Found 1 bound instance pairs for A(al1:AL1) + L(la1:LA1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Linear molecule detected for A(al1): only 1 interface, setting phi1=NaN
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Angle dispersion for A(al1)+L(la1): σ_std=0 | Var(θ1)=0 Var(θ2)=0 | CVar(φ1)=nan [MODE] CVar(φ2)=0 CVar(ω)=0  [N=1]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Found 1 bound instance pairs for H(hl1:HL1) + L(lh1:LH1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Linear molecule detected for H(hl1): only 1 interface, setting phi1=NaN
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Angle dispersion for H(hl1)+L(lh1): σ_std=0 | Var(θ1)=0 Var(θ2)=0 | CVar(φ1)=nan [MODE] CVar(φ2)=0 CVar(ω)=1.11e-16  [N=1]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Using automatically calculated NERDSS time step: 0.258471 us
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Wrote parms.inp file: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/parms.inp
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Exported 4 NERDSS files
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO -   A_mol: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/A.mol
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO -   H_mol: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/H.mol
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO -   L_mol: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/L.mol
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO -   parms: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/parms.inp
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - ============================================================
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - ============================================================
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - ============================================================
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated NERDSS file A_mol: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/A.mol
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated NERDSS file H_mol: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/H.mol
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated NERDSS file L_mol: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/L.mol
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated NERDSS file parms: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files/parms.inp
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Created NERDSS export directory: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/nerdss_files
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Using representative instance (id=5908446560) with 1 interfaces for molecule type A
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated site label: AL1 -> al1 (mol1=A, mol2=L, index=1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Using representative instance (id=5908446416) with 1 interfaces for molecule type H
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated site label: HL1 -> hl1 (mol1=H, mol2=L, index=1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Using representative instance (id=5908431584) with 2 interfaces for molecule type L
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated site label: LA1 -> la1 (mol1=L, mol2=A, index=1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated site label: LH1 -> lh1 (mol1=L, mol2=H, index=1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Singleton interface A.AL1 using default normal [0. 0. 1.] (dot=0.895)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Calculated normal vector for instance 5908446560 of A singleton interface AL1 (sites ['al1']): [0. 0. 1.]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Singleton interface H.HL1 using default normal [0. 0. 1.] (dot=0.395)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Calculated normal vector for instance 5908446416 of H singleton interface HL1 (sites ['hl1']): [0. 0. 1.]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Singleton interface L.LA1 using default normal [0. 0. 1.] (dot=0.567)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Calculated normal vector for instance 5908431584 of L singleton interface LA1 (sites ['la1']): [0. 0. 1.]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Singleton interface L.LH1 using default normal [0. 0. 1.] (dot=0.745)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Calculated normal vector for instance 5908431584 of L singleton interface LH1 (sites ['lh1']): [0. 0. 1.]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Found 1 bound instance pairs for A(al1:AL1) + L(la1:LA1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Linear molecule detected for A(al1): only 1 interface, setting phi1=NaN
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Angle dispersion for A(al1)+L(la1): σ_std=0 | Var(θ1)=0 Var(θ2)=0 | CVar(φ1)=nan [MODE] CVar(φ2)=0 CVar(ω)=0  [N=1]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Found 1 bound instance pairs for H(hl1:HL1) + L(lh1:LH1)
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Linear molecule detected for H(hl1): only 1 interface, setting phi1=NaN
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Angle dispersion for H(hl1)+L(lh1): σ_std=0 | Var(θ1)=0 Var(θ2)=0 | CVar(φ1)=nan [MODE] CVar(φ2)=0 CVar(ω)=1.11e-16  [N=1]
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Auto-calculated ODE time span: dt=0.2585 us, nItr=500000 -> duration=0.129236 s
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Step 8: Running ODE pipeline...
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Generated 6 complexes and 8 reactions for ODE
+2026-03-11 11:57:12 - ionerdss.pdb.8ERQ - INFO - Calculated default ODE initial concentrations from NERDSS counts (Volume=125000000.00 nm^3)
+2026-03-11 11:57:13 - ionerdss.pdb.8ERQ - INFO - ODE pipeline completed. Found 6 species, solved for 1000 time points
+2026-03-11 11:57:13 - ionerdss.pdb.8ERQ - INFO - Generated ODE csv: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/ode_results/ode_solution.csv
+2026-03-11 11:57:13 - ionerdss.pdb.8ERQ - INFO - Generated ODE plot: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/ode_results/ode_solution.png
+2026-03-11 11:57:13 - ionerdss.pdb.8ERQ - INFO - Generated ODE csv_simple: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/ode_results/ode_solution_simple.csv
+2026-03-11 11:57:13 - ionerdss.pdb.8ERQ - INFO - Generated ODE plot_simple: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/ode_results/ode_solution_simple.png
+2026-03-11 11:57:13 - ionerdss.pdb.8ERQ - INFO - Step 8: Saving outputs...
+2026-03-11 11:57:13 - ionerdss.pdb.8ERQ - INFO - Saved system to: /Users/yueying/Workspace/ionerdss/workspace_8ERQ_test1/1/8erq_dir/outputs/systems/8ERQ_system.json
+2026-03-11 11:57:13 - ionerdss.pdb.8ERQ - INFO - Pipeline completed successfully!
