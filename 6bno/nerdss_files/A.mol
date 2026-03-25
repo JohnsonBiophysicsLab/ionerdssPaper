@@ -1,0 +1,25 @@
+Name = A
+isLipid = false
+isImplicitLipid = false
+checkOverlap = true
+countTransition = false
+transitionMatrixSize = 500
+insideCompartment = false
+outsideCompartment = false
+mass = 1.0
+
+D = [98.99492645263672, 98.99492645263672, 98.99492645263672]
+
+Dr = [15.272256851196289, 15.272256851196289, 15.272256851196289]
+
+COM	0.0000	0.0000	0.0000
+A1	0.819532	-0.305314	2.882746
+A2	-0.237796	0.114027	-2.408423
+A3	0.223469	1.382233	1.540439
+A4	0.902011	0.881792	-1.136572
+
+bonds = 4
+com A1
+com A2
+com A3
+com A4

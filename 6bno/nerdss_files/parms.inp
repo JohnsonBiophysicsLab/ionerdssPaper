@@ -1,0 +1,53 @@
+start parameters
+	nItr = 200000
+	timeStep = 0.4
+	timeWrite = 1000
+	trajWrite = 200000
+	pdbWrite = 500
+	restartWrite = 100000
+	checkPoint = 100000
+	transitionWrite = 100000
+	clusterOverlapCheck = false
+	scaleMaxDisplace = 100.0
+	overlapSepLimit = 0.1
+end parameters
+
+start boundaries
+	WaterBox = [600.0, 600.0, 600.0]
+	hasCompartment = false
+	compartmentR = 0
+	compartmentSiteD = 0
+	compartmentSiteRho = 0
+	WaterBox = [600.0, 600.0, 600.0]
+end boundaries
+
+start molecules
+	A : 130
+end molecules
+
+start reactions
+	A(A1) + A(A2) <-> A(A1!1).A(A2!1)
+		onRate3Dka = 10.0
+		offRatekb = 0.060219999999999996
+		sigma = 0.5208088159561157
+		norm1 = [0, 0, 1]
+		norm2 = [0, 0, 1]
+		assocAngles = [1.973393, 2.166959, -3.125684, 0.331555, -3.086158]
+		length3Dto2D = 2.0
+		bindRadSameCom = 1.5
+		loopCoopFactor = 1.0
+		excludeVolumeBound = False
+
+	A(A3) + A(A4) <-> A(A3!1).A(A4!1)
+		onRate3Dka = 10.0
+		offRatekb = 14189.382378328797
+		sigma = 0.5477783679962158
+		norm1 = [0, 0, 1]
+		norm2 = [0, 0, 1]
+		assocAngles = [2.567093, 2.608861, -0.194477, 2.558448, -2.564949]
+		length3Dto2D = 2.0
+		bindRadSameCom = 1.5
+		loopCoopFactor = 1.0
+		excludeVolumeBound = False
+
+end reactions

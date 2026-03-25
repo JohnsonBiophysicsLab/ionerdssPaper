@@ -1,0 +1,49 @@
+start parameters
+    nItr = 500000
+    timestep = 0.4565284482724157
+    timeWrite = 1000.0
+    trajWrite = 50000.0
+    restartWrite = 50000.0
+    checkPoint = 50000.0
+    pdbWrite = 50000.0
+    overlapSepLimit = 2.0
+    scaleMaxDisplace = 100.0
+    transitionWrite = 1000
+end parameters
+
+start boundaries
+    WaterBox = [500.0, 500.0, 500.0] #nm
+end boundaries
+
+start molecules
+    A : 75
+end molecules
+
+start reactions
+    
+    # Binding reactions
+    A(aa1) + A(aa1) <-> A(aa1!1).A(aa1!1)
+    onRate3Dka = 120.0
+    offRatekb = 26.559573542714304
+    norm1 = [1.0, 0.0, 0.0]
+    norm2 = [1.0, 0.0, 0.0]
+    sigma = 1.142465353012085
+    assocAngles = [2.743070601890806,2.7430706018908055,2.8579647366745093,2.8579647366745093,-0.4722974441349344]
+    
+    A(aa2) + A(aa2) <-> A(aa2!1).A(aa2!1)
+    onRate3Dka = 120.0
+    offRatekb = 24.42566228197345
+    norm1 = [0.0, 1.0, 0.0]
+    norm2 = [0.0, 1.0, 0.0]
+    sigma = 1.55886709690094
+    assocAngles = [2.9894981486531904,2.9894981486531904,-1.277157220508641,-1.277157220508641,1.4175126488706133]
+    
+    A(aa3) + A(aa3) <-> A(aa3!1).A(aa3!1)
+    onRate3Dka = 120.0
+    offRatekb = 44.7328593215528
+    norm1 = [0.0, 0.0, 1.0]
+    norm2 = [0.0, 0.0, 1.0]
+    sigma = 1.4942822456359863
+    assocAngles = [2.364637366018293,2.364637366018293,2.4598240921146393,2.4598240921146393,-0.3848085560077543]
+    
+end reactions

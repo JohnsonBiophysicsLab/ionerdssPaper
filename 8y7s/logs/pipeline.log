@@ -1,0 +1,393 @@
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - INFO - === PDB Pipeline Started for 8Y7S ===
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - INFO - Workspace: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - INFO - Timestamp: 2026-03-12T10:35:09.190030
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - INFO - Initialized workspace for 8Y7S at /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - INFO - Hyperparameters: PDBModelHyperparameters(homotypic_detection='auto', residue_similarity_threshold=0.7, distance_cutoff=1.5, residue_cutoff=5, matching_mode='default', steric_clash_mode='off')
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - NOTICE - Step 1: Processing structure source: 8y7s
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - INFO - Downloading biological assembly 1 for 8Y7S from https://files.rcsb.org/download/8y7s-assembly1.cif.gz
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - INFO - Downloaded and decompressed assembly 1 to /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/structures/downloaded/8y7s-assembly1.cif
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - INFO - Using structure file: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/structures/downloaded/8y7s-assembly1.cif
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - INFO - File size: 1894290 bytes
+2026-03-12 10:35:09 - ionerdss.pdb.8Y7S - INFO - Parsing structure file: 8y7s-assembly1.cif
+2026-03-12 10:35:10 - ionerdss.pdb.8Y7S - INFO - Structure parsed successfully - concatenated 1 frames into single frame
+2026-03-12 10:35:10 - ionerdss.pdb.8Y7S - INFO - Extracting chain data...
+2026-03-12 10:35:10 - ionerdss.pdb.8Y7S - INFO - Processed 4 valid chains: ['A', 'B', 'E', 'F']
+2026-03-12 10:35:10 - ionerdss.pdb.8Y7S - INFO - Step 2: Detecting interfaces...
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Found 6 interfaces between 4 chains
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Step 3: Grouping repeated chains...
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created 1 chain groups using default method
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Step 4: Building molecular templates...
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created molecule template 'A' from reference chain 'A' with 4 members
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Processing 6 interfaces for template creation
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 119 residues for chain A from interface.residue_details_i
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain A: ['ALA119', 'ALA121', 'ALA128', 'ALA142', 'ALA144']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 118 residues for chain B from interface.residue_details_j
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain B: ['ALA119', 'ALA121', 'ALA128', 'ALA142', 'ALA144']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Residue similarity calculation: types1=['ALA', 'ARG', 'ASP', 'GLN', 'GLU'], types2=['ALA', 'ARG', 'ASP', 'GLN', 'GLU']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface A <-> B residue symmetry check: similarity=1.000, threshold=0.700, result=PASS
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 119 residues for chain A from interface.residue_details_i
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain A: ['ALA119', 'ALA121', 'ALA128', 'ALA142', 'ALA144']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 118 residues for chain B from interface.residue_details_j
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain B: ['ALA119', 'ALA121', 'ALA128', 'ALA142', 'ALA144']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Residue similarity calculation: types1=['ALA', 'ARG', 'ASP', 'GLN', 'GLU'], types2=['ALA', 'ARG', 'ASP', 'GLN', 'GLU']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface A <-> B residue symmetry check: similarity=1.000, threshold=0.700, result=PASS
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created homodimer interface type: AA1 (d_i=16.11, d_j=16.23, theta_i=0.376, theta_j=0.387, method=auto, residue_threshold=0.7)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO -   Residue composition - Chain A: {'THR': 5, 'ALA': 24, 'PRO': 7, 'LEU': 16, 'ASP': 7, 'VAL': 8, 'ILE': 8, 'LYS': 1, 'TRP': 1, 'HIS': 4, 'ARG': 10, 'GLU': 9, 'GLN': 3, 'GLY': 13, 'PHE': 2, 'SER': 1}, Chain B: {'PRO': 7, 'LEU': 16, 'ASP': 7, 'VAL': 8, 'ALA': 23, 'ILE': 8, 'THR': 5, 'LYS': 1, 'TRP': 1, 'HIS': 4, 'ARG': 10, 'GLU': 8, 'GLN': 3, 'GLY': 13, 'PHE': 2, 'SER': 2}
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created homotypic interface type AA1 using auto detection
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 222 residues for chain A from interface.residue_details_i
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain A: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA21']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 224 residues for chain E from interface.residue_details_j
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain E: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA21']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Residue similarity calculation: types1=['ALA', 'ARG', 'ASN', 'ASP', 'CYS'], types2=['ALA', 'ARG', 'ASN', 'ASP', 'CYS']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface A <-> E residue symmetry check: similarity=1.000, threshold=0.700, result=PASS
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 222 residues for chain A from interface.residue_details_i
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain A: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA21']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 224 residues for chain E from interface.residue_details_j
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain E: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA21']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Residue similarity calculation: types1=['ALA', 'ARG', 'ASN', 'ASP', 'CYS'], types2=['ALA', 'ARG', 'ASN', 'ASP', 'CYS']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface A <-> E residue symmetry check: similarity=1.000, threshold=0.700, result=PASS
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created homodimer interface type: AA2 (d_i=10.98, d_j=10.88, theta_i=0.123, theta_j=0.121, method=auto, residue_threshold=0.7)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO -   Residue composition - Chain A: {'THR': 14, 'GLY': 33, 'GLU': 9, 'VAL': 14, 'ALA': 27, 'PHE': 5, 'ILE': 12, 'ASN': 11, 'HIS': 6, 'ASP': 16, 'SER': 13, 'TYR': 5, 'GLN': 5, 'LEU': 23, 'ARG': 13, 'MET': 3, 'PRO': 7, 'LYS': 1, 'TRP': 3, 'CYS': 2}, Chain E: {'THR': 16, 'GLY': 34, 'ARG': 13, 'PRO': 7, 'VAL': 14, 'ALA': 27, 'PHE': 5, 'ILE': 12, 'ASN': 11, 'HIS': 6, 'ASP': 16, 'SER': 13, 'GLU': 8, 'LEU': 23, 'TYR': 5, 'GLN': 5, 'MET': 3, 'LYS': 1, 'TRP': 3, 'CYS': 2}
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created homotypic interface type AA2 using auto detection
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 57 residues for chain A from interface.residue_details_i
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain A: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA142']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 55 residues for chain F from interface.residue_details_j
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain F: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA142']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Residue similarity calculation: types1=['ALA', 'ARG', 'ASN', 'ASP', 'GLN'], types2=['ALA', 'ARG', 'ASN', 'ASP', 'GLN']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface A <-> F residue symmetry check: similarity=1.000, threshold=0.700, result=PASS
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 57 residues for chain A from interface.residue_details_i
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain A: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA142']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 55 residues for chain F from interface.residue_details_j
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain F: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA142']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Residue similarity calculation: types1=['ALA', 'ARG', 'ASN', 'ASP', 'GLN'], types2=['ALA', 'ARG', 'ASN', 'ASP', 'GLN']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface A <-> F residue symmetry check: similarity=1.000, threshold=0.700, result=PASS
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created homodimer interface type: AA3 (d_i=27.44, d_j=27.66, theta_i=0.765, theta_j=0.754, method=auto, residue_threshold=0.7)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO -   Residue composition - Chain A: {'SER': 1, 'GLY': 3, 'PRO': 4, 'LEU': 7, 'VAL': 6, 'ASP': 4, 'GLU': 4, 'THR': 5, 'ASN': 1, 'ALA': 7, 'ILE': 6, 'GLN': 2, 'TRP': 2, 'HIS': 1, 'ARG': 4}, Chain F: {'ARG': 4, 'VAL': 6, 'THR': 5, 'GLU': 4, 'LEU': 5, 'PRO': 4, 'ILE': 6, 'ALA': 7, 'GLN': 2, 'ASP': 4, 'TRP': 2, 'SER': 1, 'GLY': 3, 'ASN': 1, 'HIS': 1}
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created homotypic interface type AA3 using auto detection
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 57 residues for chain B from interface.residue_details_i
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain B: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA142']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 55 residues for chain E from interface.residue_details_j
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain E: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA142']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Residue similarity calculation: types1=['ALA', 'ARG', 'ASN', 'ASP', 'GLN'], types2=['ALA', 'ARG', 'ASN', 'ASP', 'GLN']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface B <-> E residue symmetry check: similarity=0.938, threshold=0.700, result=PASS
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Found matching interface type AA3 for signature d_i=27.45, d_j=27.71, theta_i=0.765, theta_j=0.757 (thresholds: dist=2.00, angle=0.200)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface B <-> E assigned to existing type: AA3
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 224 residues for chain B from interface.residue_details_i
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain B: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA21']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 226 residues for chain F from interface.residue_details_j
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain F: ['ALA113', 'ALA119', 'ALA121', 'ALA128', 'ALA21']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Residue similarity calculation: types1=['ALA', 'ARG', 'ASN', 'ASP', 'CYS'], types2=['ALA', 'ARG', 'ASN', 'ASP', 'CYS']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface B <-> F residue symmetry check: similarity=1.000, threshold=0.700, result=PASS
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Found matching interface type AA2 for signature d_i=10.94, d_j=11.03, theta_i=0.125, theta_j=0.119 (thresholds: dist=2.00, angle=0.200)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface B <-> F assigned to existing type: AA2
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 118 residues for chain E from interface.residue_details_i
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain E: ['ALA119', 'ALA121', 'ALA128', 'ALA142', 'ALA144']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Extracted 116 residues for chain F from interface.residue_details_j
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Sample residues for chain F: ['ALA119', 'ALA121', 'ALA128', 'ALA142', 'ALA144']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Residue similarity calculation: types1=['ALA', 'ARG', 'ASP', 'GLN', 'GLU'], types2=['ALA', 'ARG', 'ASP', 'GLN', 'GLU']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface E <-> F residue symmetry check: similarity=1.000, threshold=0.700, result=PASS
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Found matching interface type AA1 for signature d_i=16.17, d_j=16.34, theta_i=0.390, theta_j=0.390 (thresholds: dist=2.00, angle=0.200)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface E <-> F assigned to existing type: AA1
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface types by template pair:
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO -   A <-> A: 3 types: ['AA1', 'AA2', 'AA3']
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface signatures:
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO -   AA1: d_i=16.11, d_j=16.23, theta_i=0.376, theta_j=0.387
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO -   AA2: d_i=10.98, d_j=10.88, theta_i=0.123, theta_j=0.121
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO -   AA3: d_i=27.44, d_j=27.66, theta_i=0.765, theta_j=0.754
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Group A: member E is LOW priority — skipping geometry overwrite.
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Group A: member F is LOW priority — skipping geometry overwrite.
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Regularized group A: 2 high-priority, 2 low-priority members. Averaging used HIGH set (λ=0.00, cap=6.0 Å).
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Group A: member E is LOW priority — skipping geometry overwrite.
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Group A: member F is LOW priority — skipping geometry overwrite.
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Regularized group A: 2 high-priority, 2 low-priority members. Averaging used HIGH set (λ=0.00, cap=6.0 Å).
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface AA1 of type AA1
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface AA2 of type AA2
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface AA3 of type AA3
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created 1 molecule templates and 3 interface templates
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Step 5: Assembling final system...
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Building complete system...
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - WARNING - Cannot align chain E to representative A for orientation (different lengths or too short). Using default orientation.
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - WARNING - Cannot align chain F to representative A for orientation (different lengths or too short). Using default orientation.
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Processing 6 interfaces for instance creation
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Beginning interface instance creation with de-duplication
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface 0 has assigned type: AA1
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - No partner template for AA1; regarding as homodimeric-homotypic and using same template
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created bidirectional interface instances: A_A_B_A_1 (AA1) <-> B_A_A_A_1 (AA1)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface 1 has assigned type: AA2
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - No partner template for AA2; regarding as homodimeric-homotypic and using same template
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created bidirectional interface instances: A_A_E_A_2 (AA2) <-> E_A_A_A_2 (AA2)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface 2 has assigned type: AA3
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - No partner template for AA3; regarding as homodimeric-homotypic and using same template
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created bidirectional interface instances: A_A_F_A_3 (AA3) <-> F_A_A_A_3 (AA3)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface 3 has assigned type: AA3
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - No partner template for AA3; regarding as homodimeric-homotypic and using same template
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created bidirectional interface instances: B_A_E_A_3 (AA3) <-> E_A_B_A_3 (AA3)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface 4 has assigned type: AA2
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - No partner template for AA2; regarding as homodimeric-homotypic and using same template
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created bidirectional interface instances: B_A_F_A_2 (AA2) <-> F_A_B_A_2 (AA2)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Interface 5 has assigned type: AA1
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - No partner template for AA1; regarding as homodimeric-homotypic and using same template
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created bidirectional interface instances: E_A_F_A_1 (AA1) <-> F_A_E_A_1 (AA1)
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Created 12 interface instances
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - System created with 1 molecule types, 3 interface types, 4 molecule instances, 12 interface instances
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - System building completed
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Calculated default molecule counts (Total=75): {'A': 75}
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Step 6: Generating visualizations...
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Generating visualizations...
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Initialized PDB visualizer
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Generating all visualizations...
+2026-03-12 10:50:21 - ionerdss.pdb.8Y7S - INFO - Plotting basic coarse-grained structure...
+2026-03-12 10:50:22 - ionerdss.pdb.8Y7S - INFO - Saved basic coarse-grained structure plot to: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/basic_coarse_grained_structure.png
+2026-03-12 10:50:22 - ionerdss.pdb.8Y7S - INFO - Plotting interface connections...
+2026-03-12 10:50:22 - ionerdss.pdb.8Y7S - INFO - Saved interface connections plot to: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/interface_connections.png
+2026-03-12 10:50:22 - ionerdss.pdb.8Y7S - INFO - Plotting chain groups...
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Saved chain groups plot to: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/chain_groups.png
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Plotting template overview...
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Saved template overview plot to: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/template_overview.png
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generating PyMOL visualization script...
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated PyMOL script: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/8Y7S_visualization.pml
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Run 'pymol /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/8Y7S_visualization.pml' to visualize the structure
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Saving coarse-grained structure to CIF...
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Saved coarse-grained structure to: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/8Y7S_coarse_grained.cif
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated 6 visualization outputs
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated basic_cg: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/basic_coarse_grained_structure.png
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated interfaces: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/interface_connections.png
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated groups: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/chain_groups.png
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated templates: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/template_overview.png
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated pymol: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/8Y7S_visualization.pml
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated cg_structure: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/8Y7S_coarse_grained.cif
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated basic_cg: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/basic_coarse_grained_structure.png
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated interfaces: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/interface_connections.png
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated groups: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/chain_groups.png
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated templates: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/template_overview.png
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated pymol: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/8Y7S_visualization.pml
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated cg_structure: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/visualizations/8Y7S_coarse_grained.cif
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Step 7: Exporting NERDSS simulation files...
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Created NERDSS export directory: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/nerdss_files
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - ======================
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - A_A
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - [-3.43392105  2.46793613  5.33141556]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - <class 'dict'>
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - A_A_B_A_1:B_A, [-3.8403103  1.1893241  6.2233076]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - A_A_E_A_2:E_A, [-2.6665442  2.262547   4.573894 ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - A_A_F_A_3:F_A, [-2.871842    0.02660352  4.2125425 ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - ======================
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - B_A
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - [-3.05347366 -1.20898829  7.1740387 ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - <class 'dict'>
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - B_A_A_A_1:A_A, [-3.70066     0.23855348  6.8258553 ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - B_A_E_A_3:E_A, [-1.2113088  0.8132334  6.9489098]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - B_A_F_A_2:F_A, [-1.9984614 -1.3279777  6.90987  ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - ======================
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - E_A
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - [-0.63330925  1.4933264   3.068676  ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - <class 'dict'>
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - E_A_A_A_2:A_A, [-1.445318   1.895978   3.6712239]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - E_A_B_A_3:B_A, [-0.70747274  1.674167    5.833125  ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - E_A_F_A_1:F_A, [0.30388892 0.40685496 3.815331  ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - ======================
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - F_A
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - [ 0.45659533 -1.3369412   5.911256  ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - <class 'dict'>
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - F_A_A_A_3:A_A, [-1.9242144 -1.0822982  4.5257134]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - F_A_B_A_2:B_A, [-0.5712004 -1.4291873  6.29974  ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - F_A_E_A_1:E_A, [ 0.59257674 -0.40931997  4.573339  ]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Exporting NERDSS simulation files...
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Using representative instance (id=6023518080) with 3 interfaces for molecule type A
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated site label: AA1 -> aa1 (mol1=A, mol2=A, index=1)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated site label: AA2 -> aa2 (mol1=A, mol2=A, index=2)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated site label: AA3 -> aa3 (mol1=A, mol2=A, index=3)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Wrote .mol file with 3 interfaces using representative coordinates: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/nerdss_files/A.mol
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA1 using default normal [0. 0. 1.] (dot=0.554)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023518080 of A singleton interface AA1 (sites ['aa1']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA2 using default normal [0. 0. 1.] (dot=0.690)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023518080 of A singleton interface AA2 (sites ['aa2']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA3 using default normal [0. 0. 1.] (dot=0.408)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023518080 of A singleton interface AA3 (sites ['aa3']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA1 using default normal [0. 0. 1.] (dot=0.554)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023514048 of A singleton interface AA1 (sites ['aa1']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA3 using default normal [0. 0. 1.] (dot=0.408)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023514048 of A singleton interface AA3 (sites ['aa3']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA2 using default normal [0. 0. 1.] (dot=0.690)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023514048 of A singleton interface AA2 (sites ['aa2']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA2 using default normal [0. 0. 1.] (dot=0.690)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023513376 of A singleton interface AA2 (sites ['aa2']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA3 using default normal [0. 0. 1.] (dot=0.408)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023513376 of A singleton interface AA3 (sites ['aa3']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA1 using default normal [0. 0. 1.] (dot=0.554)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023513376 of A singleton interface AA1 (sites ['aa1']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA3 using default normal [0. 0. 1.] (dot=0.408)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023516928 of A singleton interface AA3 (sites ['aa3']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA2 using default normal [0. 0. 1.] (dot=0.690)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023516928 of A singleton interface AA2 (sites ['aa2']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA1 using default normal [0. 0. 1.] (dot=0.554)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023516928 of A singleton interface AA1 (sites ['aa1']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Found 4 bound instance pairs for A(aa1:AA1) + A(aa1:AA1)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Angle dispersion for A(aa1)+A(aa1): σ_std=0.008212 | Var(θ1)=0.0003029 Var(θ2)=0.0003029 | CVar(φ1)=0.007236 CVar(φ2)=0.007236 CVar(ω)=0.02206  [N=4]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Found 4 bound instance pairs for A(aa2:AA2) + A(aa2:AA2)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Angle dispersion for A(aa2)+A(aa2): σ_std=0.003368 | Var(θ1)=6.748e-05 Var(θ2)=6.748e-05 | CVar(φ1)=0.006715 CVar(φ2)=0.006715 CVar(ω)=0.01198  [N=4]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Found 4 bound instance pairs for A(aa3:AA3) + A(aa3:AA3)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Angle dispersion for A(aa3)+A(aa3): σ_std=0.002392 | Var(θ1)=5.67e-05 Var(θ2)=5.67e-05 | CVar(φ1)=6.743e-05 CVar(φ2)=6.743e-05 CVar(ω)=1.559e-05  [N=4]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Using automatically calculated NERDSS time step: 0.456528 us
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Wrote parms.inp file: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/nerdss_files/parms.inp
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Exported 2 NERDSS files
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO -   A_mol: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/nerdss_files/A.mol
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO -   parms: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/nerdss_files/parms.inp
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - ============================================================
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated NERDSS file A_mol: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/nerdss_files/A.mol
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated NERDSS file parms: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/nerdss_files/parms.inp
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Created NERDSS export directory: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/nerdss_files
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Using representative instance (id=6023518080) with 3 interfaces for molecule type A
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated site label: AA1 -> aa1 (mol1=A, mol2=A, index=1)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated site label: AA2 -> aa2 (mol1=A, mol2=A, index=2)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated site label: AA3 -> aa3 (mol1=A, mol2=A, index=3)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA1 using default normal [0. 0. 1.] (dot=0.554)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023518080 of A singleton interface AA1 (sites ['aa1']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA2 using default normal [0. 0. 1.] (dot=0.690)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023518080 of A singleton interface AA2 (sites ['aa2']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA3 using default normal [0. 0. 1.] (dot=0.408)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023518080 of A singleton interface AA3 (sites ['aa3']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA1 using default normal [0. 0. 1.] (dot=0.554)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023514048 of A singleton interface AA1 (sites ['aa1']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA3 using default normal [0. 0. 1.] (dot=0.408)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023514048 of A singleton interface AA3 (sites ['aa3']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA2 using default normal [0. 0. 1.] (dot=0.690)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023514048 of A singleton interface AA2 (sites ['aa2']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA2 using default normal [0. 0. 1.] (dot=0.690)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023513376 of A singleton interface AA2 (sites ['aa2']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA3 using default normal [0. 0. 1.] (dot=0.408)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023513376 of A singleton interface AA3 (sites ['aa3']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA1 using default normal [0. 0. 1.] (dot=0.554)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023513376 of A singleton interface AA1 (sites ['aa1']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA3 using default normal [0. 0. 1.] (dot=0.408)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023516928 of A singleton interface AA3 (sites ['aa3']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA2 using default normal [0. 0. 1.] (dot=0.690)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023516928 of A singleton interface AA2 (sites ['aa2']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Singleton interface A.AA1 using default normal [0. 0. 1.] (dot=0.554)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated normal vector for instance 6023516928 of A singleton interface AA1 (sites ['aa1']): [0. 0. 1.]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Found 4 bound instance pairs for A(aa1:AA1) + A(aa1:AA1)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Angle dispersion for A(aa1)+A(aa1): σ_std=0.008212 | Var(θ1)=0.0003029 Var(θ2)=0.0003029 | CVar(φ1)=0.007236 CVar(φ2)=0.007236 CVar(ω)=0.02206  [N=4]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Found 4 bound instance pairs for A(aa2:AA2) + A(aa2:AA2)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Angle dispersion for A(aa2)+A(aa2): σ_std=0.003368 | Var(θ1)=6.748e-05 Var(θ2)=6.748e-05 | CVar(φ1)=0.006715 CVar(φ2)=0.006715 CVar(ω)=0.01198  [N=4]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Found 4 bound instance pairs for A(aa3:AA3) + A(aa3:AA3)
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Interface map for A: [('AA1', 'B_A', (-3.8403103, 1.1893241, 6.2233076)), ('AA2', 'E_A', (-2.6665442, 2.262547, 4.573894)), ('AA3', 'F_A', (-2.871842, 0.026603524, 4.2125425))]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - By family:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Ends f/b:
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Angle dispersion for A(aa3)+A(aa3): σ_std=0.002392 | Var(θ1)=5.67e-05 Var(θ2)=5.67e-05 | CVar(φ1)=6.743e-05 CVar(φ2)=6.743e-05 CVar(ω)=1.559e-05  [N=4]
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Auto-calculated ODE time span: dt=0.4565 us, nItr=500000 -> duration=0.228264 s
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Step 8: Running ODE pipeline...
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Generated 6 complexes and 20 reactions for ODE
+2026-03-12 10:50:23 - ionerdss.pdb.8Y7S - INFO - Calculated default ODE initial concentrations from NERDSS counts (Volume=125000000.00 nm^3)
+2026-03-12 10:50:24 - ionerdss.pdb.8Y7S - INFO - ODE pipeline completed. Found 6 species, solved for 1000 time points
+2026-03-12 10:50:24 - ionerdss.pdb.8Y7S - INFO - Generated ODE csv: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/ode_results/ode_solution.csv
+2026-03-12 10:50:24 - ionerdss.pdb.8Y7S - INFO - Generated ODE plot: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/ode_results/ode_solution.png
+2026-03-12 10:50:24 - ionerdss.pdb.8Y7S - INFO - Generated ODE csv_simple: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/ode_results/ode_solution_simple.csv
+2026-03-12 10:50:24 - ionerdss.pdb.8Y7S - INFO - Generated ODE plot_simple: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/ode_results/ode_solution_simple.png
+2026-03-12 10:50:24 - ionerdss.pdb.8Y7S - INFO - Step 8: Saving outputs...
+2026-03-12 10:50:24 - ionerdss.pdb.8Y7S - INFO - Saved system to: /Users/yueying/Workspace/ionerdss/workspace_8Y7S_test1/1/8y7s_dir/outputs/systems/8Y7S_system.json
+2026-03-12 10:50:24 - ionerdss.pdb.8Y7S - INFO - Pipeline completed successfully!
