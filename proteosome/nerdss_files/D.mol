@@ -1,0 +1,24 @@
+Name = D
+
+checkOverlap = true
+countTransition = false
+transitionMatrixSize = 500
+# translational diffusion constants
+D = [137.354, 137.354, 137.354]
+
+# rotational diffusion constants
+Dr = [32.28, 32.28, 32.28]
+
+# Coordinates
+COM   0.0000000   0.0000000   0.0000000
+dc1  0.3085270   -0.1903364   0.6007851
+de1  0.0502701   0.3959911   0.1368092
+dk1  -0.6784096   -0.4129536   -0.1305601
+dl1  -1.1156292   0.2370174   0.0500525
+
+# bonds
+bonds = 4
+com dc1
+com de1
+com dk1
+com dl1

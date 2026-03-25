@@ -1,0 +1,28 @@
+Name = J
+
+checkOverlap = true
+countTransition = false
+transitionMatrixSize = 500
+# translational diffusion constants
+D = [150.164, 150.164, 150.164]
+
+# rotational diffusion constants
+Dr = [42.1801, 42.1801, 42.1801]
+
+# Coordinates
+COM   0.0000000   0.0000000   0.0000000
+ja11  -0.6453606   -0.4803486   -0.1127760
+jb01  0.8080791   0.4006329   0.5204800
+jc1  0.7875256   0.5727739   0.0110109
+ji1  -0.0384575   -0.1731710   0.0426786
+jk1  -0.3501259   0.7232990   -0.2398235
+jl1  -0.9913002   0.1287441   -0.4913046
+
+# bonds
+bonds = 6
+com ja11
+com jb01
+com jc1
+com ji1
+com jk1
+com jl1

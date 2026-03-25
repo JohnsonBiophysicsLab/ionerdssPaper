@@ -1,0 +1,24 @@
+Name = F
+
+checkOverlap = true
+countTransition = false
+transitionMatrixSize = 500
+# translational diffusion constants
+D = [134.668, 134.668, 134.668]
+
+# rotational diffusion constants
+Dr = [30.423, 30.423, 30.423]
+
+# Coordinates
+COM   0.0000000   0.0000000   0.0000000
+fa11  -0.7993801   -0.0450695   -0.3212465
+fb11  -0.9519370   -0.3069719   0.4941386
+fe1  0.4303734   -0.3965462   -0.3911366
+fg1  0.2121117   -0.1834801   0.3139606
+
+# bonds
+bonds = 4
+com fa11
+com fb11
+com fe1
+com fg1

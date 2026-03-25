@@ -1,0 +1,24 @@
+Name = E
+
+checkOverlap = true
+countTransition = false
+transitionMatrixSize = 500
+# translational diffusion constants
+D = [136.132, 136.132, 136.132]
+
+# rotational diffusion constants
+Dr = [31.4261, 31.4261, 31.4261]
+
+# Coordinates
+COM   0.0000000   0.0000000   0.0000000
+ea11  -0.9797026   -0.0880514   0.5190716
+ed1  0.4442463   -0.6328602   0.3064411
+ef1  0.0726662   0.0403709   0.4773109
+el1  -0.7259026   -0.2569141   -0.2684357
+
+# bonds
+bonds = 4
+com ea11
+com ed1
+com ef1
+com el1

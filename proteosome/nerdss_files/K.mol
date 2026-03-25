@@ -1,0 +1,28 @@
+Name = K
+
+checkOverlap = true
+countTransition = false
+transitionMatrixSize = 500
+# translational diffusion constants
+D = [149.124, 149.124, 149.124]
+
+# rotational diffusion constants
+Dr = [41.3094, 41.3094, 41.3094]
+
+# Coordinates
+COM   0.0000000   0.0000000   0.0000000
+kc1  0.8938293   0.0381672   0.5022198
+kd1  0.8276806   0.5698759   0.2980925
+kj1  -0.0772038   -0.3193148   0.3009258
+kk1  -1.1215820   0.2763369   -0.1796783
+kl1  -0.3112736   0.7052967   0.5025488
+kl2  -0.7490492   -0.4772461   -0.3590559
+
+# bonds
+bonds = 6
+com kc1
+com kd1
+com kj1
+com kk1
+com kl1
+com kl2
